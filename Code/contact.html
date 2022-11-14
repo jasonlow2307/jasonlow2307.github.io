@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mental Health Awareness</title>
+    <link rel="icon" type="image/png" href="resources/brain.png" sizes="32x32" />
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="stylesheet" href="general_style.css">
+    <script>
+        function validateForm(){
+            let name = document.forms["contact_form"]["name"].value;
+            let email = document.forms["contact_form"]["email"].value;
+            let age = document.forms["contact_form"]["age"].value;
+            let gender = document.forms["contact_form"]["gender"].value;
+
+            if (name == ""){
+                alert("Name must be filled in");
+                return false;
+            }
+
+            if (email ==""){
+                alert("Email must be filled in"); 
+                return false;  
+            }
+
+            if (age == ""){
+                alert("Age must be filled in");
+                return false;
+            } else if (age<0 || age>200) {
+                alert("Please enter a valid age");
+                return false;
+            } else{
+                alert("Form submitted successfully")
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<div class="header_container">
+    <div class="logo"><a href="index.html"><img src="resources/brain.png"></a></div>
+    <h1 class="heading">Mental Health Awareness</h1>
+</div>
+<div class="options_container">
+    <div class="options">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="options">
+        <a href="information.html">More Information</a>
+    </div>
+    <div class="options">
+        <a href="solution.html">Solving the Problem</a>
+    </div>
+    <div class="options">
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="options">
+        <a href="login.html">Login</a>
+    </div>
+    <div class="search">
+        <img src="resources/search.png">
+    </div>
+</div>
+
+<div class="main_container">
+    <h1>We would love to hear from you!</h1>
+    <h3>Kindly enter your information below for us to contact you.</h3>
+    <form class="form_container" name="contact_form" onsubmit="return validateForm()" method="post">
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="name"  />
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email"  />
+        <label for="age">Age*</label>
+        <input type="number" name="age" />
+        <label for="gender">Gender*</label>
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label for="opinion">Your Opinion On Importance Of Mental Health</label>
+        <textarea class="opinion" name="opinion"></textarea>
+        <label for="suggestion">Suggestions</label>
+        <textarea class="suggestion" name="suggestion"></textarea>
+        <button>Submit</button>
+        <p>Note: Fields labelled with * are compulsory fields</p>
+    </form>
+</div>
+
+<div class="call_to_action">
+    You can be the difference maker. <a href="contact.html">Contact us</a> today!
+    <br><br><a href="reference.html">References</a>
+</div>
+
+<div class="footer">
+    <div class="contact_container">
+        <div class="icons"><a href="mailto:apa@psych.org"><img src="resources/email.png"></a></div>
+        <div class="icons"><a href="https://twitter.com"><img src="resources/twitter.png"></a></div>
+        <div class="icons"><a href="https://facebook.com"><img src="resources/facebook.png"></a></div>
+        <div class="icons"><a href="https://instagram.com"><img src="resources/instagram.png"></a></div>
+        <div class="icons"><a href="https://youtube.com"><img src="resources/youtube.png"></a></div>
+    </div>
+    <div class="hotline">03-7956 8145</div>
+</div>
+
+</html>

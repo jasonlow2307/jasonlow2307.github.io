@@ -1,0 +1,15 @@
+body{
+    background-color: #E1D9D1;
+}
+
+.title{
+    text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.citations{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
