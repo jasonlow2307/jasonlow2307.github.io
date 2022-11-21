@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Mental Health Awareness</title>
     <link rel="icon" type="image/png" href="resources/brain.png" sizes="32x32" />
-    <link rel="stylesheet" href="contact_style.css">
     <link rel="stylesheet" href="general_style.css">
-    <script src="contact_script.js"></script>
+    <link rel="stylesheet" href="signup_style.css">
+    <script src="signup_script.js"></script>
 </head>
 
 <div class="header_container">
@@ -35,27 +35,20 @@
 </div>
 
 <div class="main_container">
-    <h1>We would love to hear from you!</h1>
-    <h3>Kindly enter your information below for us to contact you.</h3>
-    <form class="form_container" name="contact_form" onsubmit="return validateForm()" method="post">
-        <label for="name">Name*</label>
-        <input type="text" name="name" id="name"  />
-        <label for="email">Email*</label>
-        <input type="email" name="email" id="email"  />
-        <label for="age">Age*</label>
-        <input type="number" name="age" />
-        <label for="gender">Gender*</label>
-        <select name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
-        <label for="opinion">Your Opinion On Importance Of Mental Health</label>
-        <textarea class="opinion" name="opinion"></textarea>
-        <label for="suggestion">Suggestions</label>
-        <textarea class="suggestion" name="suggestion"></textarea>
-        <button>Submit</button>
-        <p>Note: Fields labelled with * are compulsory fields</p>
-    </form>
+    <div class="image">
+        <img src="resources/signup_image.jpg">
+    </div>
+    <div class="form_container">
+        <h2 id="welcome_banner"></h2>
+        <form method="post" id="signup_form" name="signup_form" onsubmit="return validateLogin()">
+            <h2 class="form_title">Sign Up</h2>
+                <input type="text" name="user_name" id="user_name" placeholder="Your Username" />
+                <input type="password" name="password" id="password" placeholder="Password" />
+                <input type="password" name="re_password" id="re_password" placeholder="Repeat your password" />
+                <button>Sign Up</button>
+                <a href="login.html"><br><p class="login_link">Already have an account? Login now</p></a>
+        </form>
+    </div>
 </div>
 
 <div class="call_to_action">

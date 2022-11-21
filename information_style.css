@@ -37,6 +37,37 @@
     background-color: #90E0EF;
 }
 
+.common_diseases{
+    background-color: #90E0EF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.common_diseases h2{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.common_diseases ul{
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.common_diseases li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.common_diseases h3{
+    padding-bottom: 10px;
+}
+
+.common_diseases cite{
+    padding-left: 10px;
+}
+
 .video_container{
     background-color: #CAF0F8;
     display: flex;
