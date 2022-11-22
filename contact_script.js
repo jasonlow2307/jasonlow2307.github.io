@@ -1,3 +1,7 @@
+function containsNumbers(str) {
+    return /[0-9]/.test(str);
+  }
+
 function validateForm(){
     let name = document.forms["contact_form"]["name"].value;
     let email = document.forms["contact_form"]["email"].value;
@@ -7,6 +11,11 @@ function validateForm(){
     if (name == ""){
         alert("Name must be filled in");
         return false;
+    }
+
+    if (containsNumbers(name) == true) {
+        alert("Name cannot contain number(s)");
+        return false
     }
 
     if (email ==""){
