@@ -72,6 +72,13 @@ td{
     border: 1px solid black;
 }
 
+.organisations_link{
+    display: inline;
+    padding-top: 10px;
+    color: black;
+    text-decoration: underline;
+}
+
 .cite{
     background-color: #00B4D8;
     padding-bottom: 10px;
